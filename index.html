@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TurkMart — a local seller marketplace for Lodwar and wider Turkana County, Kenya." />
+  <title>TurkMart — Lodwar and Turkana Marketplace</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="pattern-chip" aria-hidden="true">◆ ◇ ◆ ◇ ◆</span> Lodwar-first marketplace <span>•</span> Discover local sellers across Turkana</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="TurkMart home"><span class="brand-mark">◆</span><span>Turk<span class="brand-dark">Mart</span><small>Lodwar & Turkana Marketplace</small></span></a>
+    <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Search products, brands and more…" aria-label="Search products" /><button aria-label="Search">⌕</button></form>
+    <nav class="header-actions" aria-label="Main actions"><button class="text-action" id="sellerBtn">＋ <span>Sell on TurkMart</span></button><button class="text-action" id="accountBtn">♙ <span>Account</span></button><button class="icon-action" id="wishlistBtn" aria-label="Wishlist">♡ <span id="wishCount" class="count">0</span></button><button class="icon-action" id="cartBtn" aria-label="Shopping cart">🛒 <span id="cartCount" class="count">0</span></button></nav>
+  </header>
+  <nav class="main-nav turkana-pattern"><a class="active" href="#home">Home</a><a href="#products">Shop</a><a href="#categories">Categories</a><a href="#about">About Us</a><a href="#contact">Contact</a><span class="nav-note">◆ Local sellers · Lodwar first, wider Turkana next</span></nav>
+  <main>
+    <section class="hero" id="home"><div class="hero-shade"></div><div class="hero-content"><p class="eyebrow">SUPPORT LOCAL · SHOP SMART.</p><h1>Quality products<br />from <span style="color:#f3a05b">Turkana</span>.</h1><p>Shop everyday essentials and discover products from local Turkana sellers. Start in Lodwar, with wider county delivery planned.</p><button class="primary-btn" id="shopNow">Shop now <span>→</span></button></div><div class="hero-dots"><i></i><i></i><i></i></div></section>
+    <section class="category-section" id="categories">
+      <button class="category" type="button" data-category="Electronics"><span>▣</span><b>Electronics</b></button>
+      <button class="category" type="button" data-category="Phones & Accessories"><span>▤</span><b>Phones & Accessories</b></button>
+      <button class="category" type="button" data-category="Computers"><span>⌨</span><b>Computers</b></button>
+      <button class="category" type="button" data-category="Fashion & Clothing"><span>♧</span><b>Fashion & Clothing</b></button>
+      <button class="category" type="button" data-category="Shoes & Bags"><span>◒</span><b>Shoes & Bags</b></button>
+      <button class="category" type="button" data-category="Home & Furniture"><span>⌂</span><b>Home & Furniture</b></button>
+      <button class="category" type="button" data-category="Kitchen & Appliances"><span>♨</span><b>Kitchen & Appliances</b></button>
+      <button class="category" type="button" data-category="Groceries & Food"><span>♧</span><b>Groceries & Food</b></button>
+      <button class="category" type="button" data-category="Fresh Produce"><span>❋</span><b>Fresh Produce</b></button>
+      <button class="category" type="button" data-category="Beauty & Personal Care"><span>✳</span><b>Beauty & Personal Care</b></button>
+      <button class="category" type="button" data-category="Health & Wellness"><span>✚</span><b>Health & Wellness</b></button>
+      <button class="category" type="button" data-category="Baby & Kids"><span>♡</span><b>Baby & Kids</b></button>
+      <button class="category" type="button" data-category="Books & Stationery"><span>▤</span><b>Books & Stationery</b></button>
+      <button class="category" type="button" data-category="School & Office"><span>✎</span><b>School & Office</b></button>
+      <button class="category" type="button" data-category="Sports & Outdoors"><span>⚽</span><b>Sports & Outdoors</b></button>
+      <button class="category" type="button" data-category="Building & Hardware"><span>⚒</span><b>Building & Hardware</b></button>
+      <button class="category" type="button" data-category="Auto & Motorbike"><span>⚙</span><b>Auto & Motorbike</b></button>
+      <button class="category" type="button" data-category="Agriculture & Livestock"><span>♧</span><b>Agriculture & Livestock</b></button>
+      <button class="category" type="button" data-category="Local Turkana Crafts"><span>✳</span><b>Local Turkana Crafts</b></button>
+      <button class="category" type="button" data-category="Art & Gifts"><span>◇</span><b>Art & Gifts</b></button>
+      <button class="category" type="button" data-category="Pets & Animal Care"><span>♧</span><b>Pets & Animal Care</b></button>
+      <button class="category" type="button" data-category="Services & Rentals"><span>⌁</span><b>Services & Rentals</b></button>
+      <button class="category" type="button" data-category="All"><span>⊞</span><b>All</b></button>
+    </section>
+    <section class="products-section" id="products"><div class="section-heading"><div><p class="eyebrow">CURATED FOR YOU</p><h2 id="productHeading">Featured products</h2></div><button class="link-btn" id="viewAll">View all →</button></div><div class="toolbar"><span id="resultCount">Showing popular picks</span><select id="sortSelect" aria-label="Sort products"><option value="featured">Sort: Featured</option><option value="price-low">Price: Low to high</option><option value="price-high">Price: High to low</option><option value="name">Name: A–Z</option></select></div><div class="product-grid" id="productGrid"></div><div class="empty-state hidden" id="emptyState">No products matched your search. Try another keyword or view all products.</div></section>
+    <section class="benefits" id="about"><div><span class="benefit-icon">▰</span><span><b>Local-first delivery</b><small>Lodwar first; confirm other areas</small></span></div><div><span class="benefit-icon">▤</span><span><b>Payment options</b><small>M-Pesa integration planned</small></span></div><div><span class="benefit-icon">⟳</span><span><b>Seller accountability</b><small>Clear seller and returns policies</small></span></div></section>
+  </main>
+  <footer id="contact" class="turkana-pattern"><a class="brand footer-brand" href="#home"><span class="brand-mark">◆</span><span>Turk<span class="brand-dark">Mart</span><small>Lodwar & Turkana Marketplace</small></span></a><p>A local marketplace connecting customers with sellers in Lodwar and across Turkana County.</p><div class="footer-links"><a href="#home">Home</a><a href="#products">Shop</a><a href="#about">About</a><a href="mailto:hello@turkmart.example">Contact</a></div><small>© <span id="year"></span> TurkMart. Prototype only — sample prices and seller listings must be verified before launch.</small></footer>
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="drawer hidden" id="cartDrawer" aria-label="Shopping cart"><div class="drawer-head"><h2>Your cart <span id="drawerCount">(0)</span></h2><button class="close-btn" data-close aria-label="Close cart">×</button></div><div class="drawer-body" id="cartItems"></div><div class="cart-summary" id="cartSummary"></div></aside>
+  <aside class="drawer hidden" id="wishlistDrawer" aria-label="Wishlist"><div class="drawer-head"><h2>Your wishlist</h2><button class="close-btn" data-close aria-label="Close wishlist">×</button></div><div class="drawer-body" id="wishlistItems"></div></aside>
+  <section class="modal hidden" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close-btn modal-close" data-close aria-label="Close product details">×</button><div id="productDetails"></div></section>
+  <section class="modal checkout-modal hidden" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><button class="close-btn modal-close" data-close aria-label="Close checkout">×</button><p class="eyebrow">ALMOST THERE</p><h2 id="checkoutTitle">Checkout</h2><p class="muted">This demo collects no payment. Payment integration is a later project phase.</p><form id="checkoutForm" class="checkout-form"><label>Full name<input name="name" required placeholder="Your name" /></label><label>Phone number<input name="phone" type="tel" required pattern="[+0-9 ()-]{9,16}" placeholder="07XX XXX XXX" /></label><label>Email (optional)<input name="email" type="email" placeholder="you@example.com" /></label><label>Delivery location<input name="location" required placeholder="Lodwar area, landmark, town or delivery address" /></label><label>Payment preference<select name="payment" required><option value="M-Pesa (planned integration)">M-Pesa</option><option value="Card (planned integration)">Debit / credit card</option><option value="Cash on delivery">Cash on delivery</option></select></label><div class="checkout-total" id="checkoutTotal"></div><button class="primary-btn full-width" type="submit">Place demo order</button></form></section>
+  <section class="modal hidden" id="sellerModal" role="dialog" aria-modal="true" aria-labelledby="sellerTitle"><button class="close-btn modal-close" data-close aria-label="Close seller settings">×</button><p class="eyebrow">SELLER SETTINGS</p><h2 id="sellerTitle">Seller contact & delivery</h2><p class="muted">Prototype only: these details are saved in this browser, not uploaded to a live marketplace.</p><form id="sellerForm" class="checkout-form"><label>Shop / seller name<input name="shopName" required placeholder="e.g. Lodwar Home Supplies" /></label><label>Business phone number<input name="phone" type="tel" required pattern="[+0-9 ()-]{9,16}" placeholder="07XX XXX XXX or +2547XX XXX XXX" /></label><fieldset class="seller-options"><legend>How can customers receive orders?</legend><label class="check-label"><input type="checkbox" name="delivery" /> I can deliver to customers</label><label class="check-label"><input type="checkbox" name="pickup" /> Customers can pick up from my shop</label></fieldset><label>Delivery areas<input name="areas" placeholder="Lodwar town, Kanamkemer, Napetet…" /></label><label>Delivery fee (KES)<input name="deliveryFee" type="number" min="0" step="1" placeholder="Leave blank if to be agreed" /></label><label>Pickup location / landmark<input name="pickupLocation" placeholder="Shop name, area or nearby landmark" /></label><label>Extra instructions<textarea name="notes" rows="3" placeholder="Delivery times or pickup instructions…"></textarea></label><button class="primary-btn full-width" type="submit">Save seller settings</button></form><p id="sellerSaved" class="seller-saved hidden" role="status"></p></section>
+  <section class="modal hidden" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountTitle"><button class="close-btn modal-close" data-close aria-label="Close account">×</button><p class="eyebrow">CUSTOMER SPACE</p><h2 id="accountTitle">Welcome to TurkMart</h2><p class="muted">Customer sign-in will be connected to a secure backend in Phase 2. For now, you can explore the store without an account.</p><button class="primary-btn full-width" data-close>Continue shopping</button></section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
